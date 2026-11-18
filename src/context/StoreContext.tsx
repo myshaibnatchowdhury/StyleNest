@@ -237,7 +237,19 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
 
   const [slides, setSlides] = useState<CarouselSlide[]>(() => {
     const saved = localStorage.getItem('stylenest_slides');
-    return saved ? JSON.parse(saved) : initialSlides;
+    if (saved) {
+      try {
+        const parsed: CarouselSlide[] = JSON.parse(saved);
+        return parsed.map((s) =>
+          s.id === 'slide-1' && (s.image_url.includes('photo-1534528741775') || s.image_url.includes('unsplash'))
+            ? { ...s, image_url: '/hero-banner.jpg' }
+            : s
+        );
+      } catch {
+        return initialSlides;
+      }
+    }
+    return initialSlides;
   });
 
   const [settings, setSettings] = useState<StoreSettings>(() => {

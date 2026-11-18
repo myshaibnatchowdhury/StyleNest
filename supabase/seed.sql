@@ -60,6 +60,6 @@ ON CONFLICT (id) DO NOTHING;
 
 -- 5. CAROUSEL SLIDES
 INSERT INTO public.carousel_slides (id, tag, title, subtitle, cta_text, cta_link, image_url, order_index, is_active) VALUES
-('slide-1', 'NEW SEASON COLLECTION', 'Style for Every Chapter', 'Trendy outfits. Timeless comfort. Only at StyleNest.', 'Shop Now', '#latest-collection', 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=80', 1, true),
+('slide-1', 'NEW SEASON COLLECTION', 'Style for Every Chapter', 'Trendy outfits. Timeless comfort. Only at StyleNest.', 'Shop Now', '#latest-collection', '/hero-banner.jpg', 1, true),
 ('slide-2', 'HERITAGE & TRADITION', 'Elegance Reimagined', 'Hand-woven artisan sarees and royal kurtis for your finest occasions.', 'Explore Traditional', '#category-traditional', 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1200&q=80', 2, true)
 ON CONFLICT (id) DO NOTHING;

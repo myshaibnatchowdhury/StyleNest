@@ -45,10 +45,10 @@ export const HeroCarousel: React.FC = () => {
             <img
               src={currentSlide.image_url}
               alt={currentSlide.title}
-              className="w-full h-full object-cover object-top sm:object-center transform scale-105 transition-transform duration-1000 ease-out"
+              className="w-full h-full object-cover object-center transform scale-105 transition-transform duration-1000 ease-out"
             />
-            {/* Dark warm gradient mask so text is crisp */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#173B32]/95 via-[#173B32]/85 to-transparent sm:via-[#173B32]/75" />
+            {/* Dark warm gradient mask so text is crisp while clothes stand out */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#173B32]/95 via-[#173B32]/80 to-transparent sm:via-[#173B32]/65" />
           </div>
 
           {/* Carousel Left Content */}

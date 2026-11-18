@@ -747,7 +747,7 @@ export const initialSlides: CarouselSlide[] = [
     subtitle: 'Trendy outfits. Timeless comfort. Only at StyleNest.',
     cta_text: 'Shop Now',
     cta_link: '#latest-collection',
-    image_url: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=80',
+    image_url: '/hero-banner.jpg',
     order_index: 1,
     is_active: true,
   },
